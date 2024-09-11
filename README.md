@@ -184,7 +184,7 @@ The global routing will tell for which signal which metal layer is used.Before t
 
 
 
-**FPGA based design**:- 
+**FPGA based design flow**:- 
 
 ![image](https://github.com/user-attachments/assets/02787787-5907-4240-beed-7136dfef1f75)
 
