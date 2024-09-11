@@ -13,15 +13,15 @@
     <li><a href="#header-2">Session-2</a></li>
 	<ul>
         <li><a href="#header-2_1"> Lecture 2-Verilog HDL- Lexical Conventions</a></li>
-		<ul>
+		<ul></ul>
        <li><a href="#header-2_1_1"> Lab1- of Modelsim Simulation</a></li>
-		<ul>
+		<ul></ul>
        <li><a href="#header-2_1_2">Lab2- Simulation using ICARUSFile</a></li>
-		<ul>
+		<ul></ul>
        <li><a href="#header-2_1_3">Lab3-Simulation using Xilinx VivadoFile</a></li>
-		<ul>
+		<ul></ul>
        <li><a href="#header-2_1_4">Lab 3A-EDA Playground </a></li>
-		<ul>
+		<ul></ul>
 			
   </div>
   
