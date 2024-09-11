@@ -70,8 +70,6 @@
 # <h1 id="header-1">Session-1</h1>	 
 ## <h1 id="header-1_1">Lecture 1-Video-Intro to VLSI Design Flow</h1> 
 
-**Introduction to FPGA**:-  FPGA, or field programmable gate array, is a type of semiconductor logic device that, like PLDs, may be configured to create virtually any system or digital circuit. PLDS can support only a few hundred gates, but FPGAs can accommodate thousands of gates. An ASIC-like language called HDL (Hardware Description Language) is typically used to specify the setting of the FPGA design ( Application Specific Integrated Circuit).
-
 **Design logic Implementation: Categories**:- 
 
 ![image](https://github.com/user-attachments/assets/cf88adb9-cdca-426a-8642-0a9f44234e83)
@@ -170,9 +168,27 @@ The global routing will tell for which signal which metal layer is used.Before t
 
 ![image](https://github.com/user-attachments/assets/16152d9f-2990-48b1-8e55-762c901e1dcb)
 
+**FPGA- A Conceptual View**:- An FPGA is like an electrical breadboard that is wired together by an automated synthesis tool. Built in components are caklles macros.
+
+![Screenshot 2024-09-11 131447](https://github.com/user-attachments/assets/21370964-28c2-4d36-a4b7-791de765c7a1)
+
+**FPGA- An inside look**:- Inside FPGA there are three building blocks.
+
+1) Conficural liogic blocks(CLB)
+
+2) I/O blocks
+
+3) Programmable Routing or interconnects
+
+![image](https://github.com/user-attachments/assets/ccae4b44-ac6b-40d4-a69b-a56b5f3d11a4)
 
 
 
+**FPGA based design**:- 
+
+![image](https://github.com/user-attachments/assets/02787787-5907-4240-beed-7136dfef1f75)
+
+![image](https://github.com/user-attachments/assets/461b422a-e41b-48b7-aa45-b0a6825c71e8)
 
 
    
