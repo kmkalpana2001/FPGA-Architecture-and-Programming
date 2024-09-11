@@ -74,7 +74,8 @@ This repository contains all the information studied and created during the [FPG
 
 **Design logic Implementation: Categories**:- 
 
-![Screenshot 2024-09-11 120219](https://github.com/user-attachments/assets/59dbd6b6-7169-4beb-8a95-d349c7c694dd)
+![image](https://github.com/user-attachments/assets/cf88adb9-cdca-426a-8642-0a9f44234e83)
+
 
 **Full Custom Design**:- All the logics, circuits and layouts are designed specifically for that particular ASIC(Application specific integrated ciruits)from the ground up. It requires high power consumption.
 
