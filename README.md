@@ -30,15 +30,15 @@ This repository contains all the information studied and created during the [FPG
       <li><a href="#header-3">Session-3</a></li>
 	<ul>
         <li><a href="#header-3_1"> Lecture 3-Verilog HDL - Design Abstractions</a></li>
-		<ul
-	<li><a href="#header-3_2"> Lab Exercise- LE01</a></li>
+		<ul>
+	<li><a href="#header-3_2"> Lab Exercise- LE01 </a></li>
 		<ul>
    </div>
   
   <div class="toc">
   <ul>
       <li><a href="#header-3">Session-4</a></li>			
-        
+        <ul>
 
 
 
