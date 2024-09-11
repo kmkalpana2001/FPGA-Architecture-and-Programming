@@ -13,7 +13,7 @@
     <li><a href="#header-2">Session-2</a></li>
 	<ul>
         <li><a href="#header-2_1"> Lecture 2-Verilog HDL- Lexical Conventions</a></li>
-		<ul></ul>
+		<ul>
        <li><a href="#header-2_1_1"> Lab1- of Modelsim Simulation</a></li>
 		<ul></ul>
        <li><a href="#header-2_1_2">Lab2- Simulation using ICARUSFile</a></li>
@@ -32,7 +32,7 @@
         <li><a href="#header-3_1"> Lecture 3-Verilog HDL - Design Abstractions</a></li>
 		<ul>
 	<li><a href="#header-3_2"> Lab Exercise- LE01 </a></li>
-		<ul>
+		<ul></ul>
    </div>
   
   <div class="toc">
