@@ -164,6 +164,12 @@ The global routing will tell for which signal which metal layer is used.Before t
 **Packaging and testing**:-
              After the fabrication process we test the chip.If there is any fault in the design then we modifies the design by repeating the steps.If there are no faults then chip will go to packaging.
 
+**ASIC Vs FPGA**:-
+
+![image](https://github.com/user-attachments/assets/322aa95f-73f9-450c-b252-6d40cd8c0bb7)
+
+![image](https://github.com/user-attachments/assets/16152d9f-2990-48b1-8e55-762c901e1dcb)
+
 
 
 
