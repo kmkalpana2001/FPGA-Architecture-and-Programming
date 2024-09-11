@@ -191,4 +191,9 @@ The global routing will tell for which signal which metal layer is used.Before t
 ![image](https://github.com/user-attachments/assets/461b422a-e41b-48b7-aa45-b0a6825c71e8)
 
 
+# <h1 id="header-2">Session-2</h1>	 
+## <h1 id="header-2_1">Lecture 2-Verilog HDL- Lexical Conventions</h1> 
+
+ 
+
    
