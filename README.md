@@ -118,14 +118,19 @@ This repository contains all the information studied and created during the [FPG
                 It is a functional verification of RTL design.After the RTL design by applying test cases we verify the design in verification stage.If any mistakes are found then the design is re send to the RTL designing department.The verification stage will take nearly 60% of the total time.Performing this verification at this stage is most advantageous because correcting the faults at routing stage is difficult and takes more time.
 
 **Synthesis**:-
-               It is a process of converting the RTL code into gate level netlist.Up to RTL verification the design is technology independent.In synthesys process the design is converted into technology dependent.it is 3 stage process.
+               It is a process of converting the RTL code into gate level netlist.Up to RTL verification the design is technology independent.In synthesys process the design is converted into technology dependent.
+It is 3 stage process.
+
 1.**Translation**:- The RTL code is converted in to Boolean expression.
+
 2.**Optimization**:- In this stage Boolean expression is optimized by SOP and POS optimization method.
+
 3.**Mapping**:- In this technology independent Boolean expression is converted into technology dependent and generates the gate level net list.
+
 The inputs for synthesis are RTL code, .SDC and .LIB.after the synthesis the generated outputs are gate level netlist and .SDC.
 
 **DFT(Design for testability)**:-
-         Design for testability(DFT) is a technique which facilitates a design to become testable after production.In this stage we put extra logic along with the design logic during implementation process which helps post production process.The DFT will make the testing easy at post production process.At this stage an ATPG(automatic test pattern generator) file will generated.
+                    It is a technique which facilitates a design to become testable after production.In this stage we put extra logic along with the design logic during implementation process which helps post production process.The DFT will make the testing easy at post production process.At this stage an ATPG(automatic test pattern generator) file will generated.
 
 **Floorplan**:-
               The floorplan is the process of determining the macro placement,power grid generation and i/o placement.It is the process of placing blocks/macros in the chip/core area there by determining routing areas between them.It determines the size of the die and creates wire tracks for placement of standard cells.It creates power straps and specifies pg connection.It also determine the i/o ,pin/pad placement information.
@@ -136,12 +141,21 @@ The inputs for synthesis are RTL code, .SDC and .LIB.after the synthesis the gen
 
 **CTS(clock tree synthesis)**:-
                In this stage we built the clock tree by using inverters and buffers.In the chip clock signal is essential to the flip flops,to give the clock signal from clock source we built the clock tree.It is the process of balancing the clock skew and minimizing insertion delay in order to meet timing and power.
-Routing:-
-               Before the routing stage the connection between the macros,standard cells,clock,i/o port are logical connections.In this stage we connect all the cells physically with the metal straps.Routing is divided as two parts 1)global routing 2)detailed routing.The global routing will tell for which signal which metal layer is used.Before the detailed routing all are the logical connections.In detailed routing the physical connections are done.
+
+	
+**Routing**:-
+               Before the routing stage the connection between the macros,standard cells,clock,i/o port are logical connections.In this stage we connect all the cells physically with the metal straps.
+	       
+Routing is divided into two parts.
+
+1)global routing.
+
+2)detailed routing.
+
+The global routing will tell for which signal which metal layer is used.Before the detailed routing all are the logical connections.In detailed routing the physical connections are done.
 
 **Signoff**:-
-
-              After the routing the physical layout of chip is completed.In signoff stage all the tests are done to check the quality and performance of the layout before tapeout.After this the design is converted into GDS II file.
+        After the routing the physical layout of chip is completed.In signoff stage all the tests are done to check the quality and performance of the layout before tapeout.After this the design is converted into GDS II file.
 
 **Fabrication**:-
                 By the GDS II file  information we fabricate the chip.The total design is converted into chip by the manufacturing process.
