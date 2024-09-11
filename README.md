@@ -1,5 +1,5 @@
 # FPGA-Architecture-and-Programming
-# Contents 
+# Contents
  <div class="toc">
   <ul>
     <li><a href="#header-1">Session-1</a></li>
