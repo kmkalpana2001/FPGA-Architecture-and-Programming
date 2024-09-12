@@ -296,7 +296,7 @@ Module definitions may be written in terms of parameters where gardcoded numbers
 
 **2:1 MUX data flow using behavioral modeling**:-  
 
-``
+```
 1) module mux2x1(a,b,s,out);
    input a,b,s,
    ouput out;
