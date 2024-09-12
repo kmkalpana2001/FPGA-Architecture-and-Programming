@@ -191,11 +191,114 @@ The global routing will tell for which signal which metal layer is used.Before t
 ![image](https://github.com/user-attachments/assets/461b422a-e41b-48b7-aa45-b0a6825c71e8)
 
 
-# <h1 id="header-2">Session-2</h1>	 
-## <h1 id="header-2_1">Lecture 2-Verilog HDL- Lexical Conventions</h1> 
+# <h2 id="header-2">Session-2</h2>	 
+## <h2 id="header-2_1">Lecture 2-Verilog HDL- Lexical Conventions</h2> 
+
+**Y- Chart**:- It is a model, which captures the considerations in designing semiconductor devices.
+
+The three domains of the Gajski-Kuhn Y-chart are on radial axes. Each of the domains can be divided into levels of abstraction, using concentric rings.
+
+At the top level (outer ring), we consider the architecture of the chip; at the lower levels (inner rings), we successively refine the design into finer detailed implementation −
+
+Creating a structural description from a behavioral one is achieved through the processes of high-level synthesis or logical synthesis.
+
+Creating a physical description from a structural one is achieved through layout synthesis.
+
+ ![image](https://github.com/user-attachments/assets/09950f6c-15b1-4ab3-a09f-9fb73bcf1bd7)
+
+**Need of HDL(High description language)**:- Hardware Description Language (HDL) is a programming language that is used to describe the structure, behaviour and timing of electronic circuits, and most commonly, digital logic circuits. HDLs are used for designing processors, motherboards, CPUs and various other Digital circuits. In addition to their use in circuit design, HDLs serve the purpose of simulating the circuit and verifying its response. Many HDLs are available, but the most popular HDLs so far are Verilog and VHDL. 
+
+**What is Module**:- Module is the most fundamental block of verilog langauge. It can be a design block or a collection lower-level design blocks. It hides onternal implementation. Through ports provide necessary functionality to other modules. It has lot of input pins and output pins.
+
+**Module Structure**:- Inside the module at the starting of module we have there will be module name(dont stat with a number) portlist, port decclaration, parameters declaration and then we have declaration of wire and reg variables. And then instantiationof other module if required. Module body consist of continuous statements or data flow statement some procedural block, always block andd initial block. andd then we have some task and functions and wee end the module with writing endmudule in the verilog cide language.
+
+**Data Vlaues**:- Verilog supports these data values. 
+
+0,1,z,x which has the meaning low/zero/false,highone/true,high impedence and uninitialized or unknown respectively.
+
+**Number in Verilog**:- Syntax: <Size>'<Base><Value>
+
+8'hax= 1010xxxx
+
+12'o3zx7= 011zzzxxx111
+
+If no base is specified then by default decimal will be considered as base to that particular number.
+
+**Strings**:- Strings are enclosed in double quotes andd must be specified on one line. 
+
+eg: ""This is string"
+
+String variable declaration uses one byte per string character.
+
+**Port types**:- 
+
+![image](https://github.com/user-attachments/assets/ad3e718b-efcb-4212-9928-e31614307d23)
+
+**Bsic Data Types**:- 
+
+1) Net data type:- Represents physical interconnect between processes(activity flows)
+
+![image](https://github.com/user-attachments/assets/2ae45431-0e9b-41c1-829e-646197fbd8b2)
+
+2) Register ddata type:- Represent variable to store data temporarily. It ddoes not represent a physical(hardware) register.
+
+![image](https://github.com/user-attachments/assets/4c85ce82-95cd-42b1-8925-bdc2197925da)
+
+**Operators in Verilog**:- 
+
+![image](https://github.com/user-attachments/assets/ad5268a0-6e77-4209-94fd-7f101491ba27)
+
+**Vectora & Arrays**:- Vector represents bus where left number in MS bit and Vector assignment by position.
+
+Array is a collection of the same data type.
+
+![image](https://github.com/user-attachments/assets/130fce95-2bf8-4908-bc6e-02b182da9ff5)
+
+**Memories**:- Memories can be modeledd as array of registers where each element in the array representa a word and each word can be one bit or multiple bits wide.
+
+![image](https://github.com/user-attachments/assets/f4aa876a-1740-4b85-90dc-dc379d080af1)
+
+**Parameters**:- Allows constant to be define in a module by the keyword parameter and it can not be used as variables. Paramete for each module instance can be overriddden individually at compile time.
+
+Module definitions may be written in terms of parameters where gardcoded numbers should be avoied and parameters can be changed at module instantiations or by using the defparam statement.
+
+**Levels of design abstraction**:- 
+
+1) Behavioral level
+
+2) Data flow level
+
+3) Gate level
+
+4) Switch level
+
+**System task**:- 1)Monitoring and printing
+
+```$display```:- For displaying values of variables or strings or expressions.
+
+```$monitor```:- For continuously monitoring changes in the values of the variables in its sensitivity list.
+
+![image](https://github.com/user-attachments/assets/b11ffec4-5a67-403d-bad6-29a8776e1343)
+
+2)Stopping and Finishing
+
+```$stop```:- To stop the current simulation and to put the compiler in debug mode.
+
+```$finish```:- To terminate the simulation and to quit the compiler.
+
+
+![image](https://github.com/user-attachments/assets/461b4b35-9bbe-43f4-a568-13b3a68850ab)
+
+
+## <h2 id="header-2_1_1">Lab1- of Modelsim Simulation</h2> 
 
 
 
- 
 
-   
+
+
+
+
+
+
+
