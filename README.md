@@ -24,6 +24,10 @@
       <li><a href="#header-4">Session-4</a></li>			
         <ul>
 
+    <div class="toc">
+  <ul>
+      <li><a href="#header-5">Session-5</a></li>			
+        <ul>
 
 
 
@@ -385,37 +389,6 @@ Width matching is illegal to connect an internal and external items of different
 Port connection list controls how this instantiation connects to the ports in the top level block. same module can be instantiated multiple time, but each with unique name.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 **4-bit full adder : hierarchical view**:- 
 
 ![image](https://github.com/user-attachments/assets/3405e48a-72e0-4e98-aa47-46bc4577356f)
@@ -493,6 +466,8 @@ endmodule
 
 **Test bench example**:- 2-input AND gate
 
+![image](https://github.com/user-attachments/assets/8ae25062-302c-47de-8c9a-87a6df898ca3)
+
 ```
    module and2(a,d,out);
     input a,b,
@@ -500,12 +475,8 @@ endmodule
     wire a,b,out;
     assign out =  a&b;
     endmodule
-```
 
 
-![image](https://github.com/user-attachments/assets/8ae25062-302c-47de-8c9a-87a6df898ca3)
-
-```
   module tb_and2;
     reg A;        
     reg B;         
@@ -522,6 +493,7 @@ endmodule
 endmodule
 ```
 
+## <h5 id="header-5">Session-5</h1>	 
 
 
 
