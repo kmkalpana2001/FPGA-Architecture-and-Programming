@@ -380,9 +380,9 @@ Port connection list controls how this instantiation connects to the ports in th
 module ripple_carry_adder (
     input  [3:0] A,     
     input  [3:0] B,      
-    input        Cin,   
+    input  Cin,   
     output [3:0] Sum,    
-    output       Cout    
+    output Cout    
 );
 
     wire C1, C2, C3;
@@ -395,11 +395,11 @@ module ripple_carry_adder (
 endmodule
 
 module full_adder (
-    input  A,        // Input A
-    input  B,        // Input B
-    input  Cin,      // Carry-in
-    output Sum,      // Sum output
-    output Cout      // Carry-out
+    input  A,        
+    input  B,        
+    input  Cin,      
+    output Sum,    
+    output Cout      
 );
 
     assign Sum  = A ^ B ^ Cin;     
