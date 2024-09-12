@@ -305,7 +305,7 @@ Module definitions may be written in terms of parameters where gardcoded numbers
    endmodule
    
 
-**Using conditional operator**:-
+_Using conditional operator_:-
 
    module mux2x1(a,b,s,out);
    input a,b,s,
@@ -313,7 +313,7 @@ Module definitions may be written in terms of parameters where gardcoded numbers
    assign out = s ? b: a;
    endmodule
 
-**Using if else**:-
+_Using if else_:-
 
    module mux2x1(a,b,s,out);
    input a,b,s;
