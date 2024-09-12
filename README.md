@@ -25,11 +25,7 @@
         <ul>
       </div>
 		
-    <div class="toc">
-    <ul>
-        <li><a href="#header-5">Session-5</a></li>			
-         <ul>	
- </div>
+    
 		
 
 
