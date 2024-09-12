@@ -4,40 +4,24 @@
   <ul>
     <li><a href="#header-1">Session-1</a></li>
     <ul>
-    <li><a href="#header-1_1">Lecture 1-Video-Intro to VLSI Design Flow</a></li>
-		<ul>
     </div>
   
 <div class="toc">
   <ul>
     <li><a href="#header-2">Session-2</a></li>
 	<ul>
-        <li><a href="#header-2_1"> Lecture 2-Verilog HDL- Lexical Conventions</a></li>
-		<ul>
-       <li><a href="#header-2_1_1"> Lab1- of Modelsim Simulation</a></li>
-		<ul></ul>
-       <li><a href="#header-2_1_2">Lab2- Simulation using ICARUSFile</a></li>
-		<ul></ul>
-       <li><a href="#header-2_1_3">Lab3-Simulation using Xilinx VivadoFile</a></li>
-		<ul></ul>
-       <li><a href="#header-2_1_4">Lab 3A-EDA Playground </a></li>
-		<ul></ul>
 			
   </div>
   
   <div class="toc">
   <ul>
       <li><a href="#header-3">Session-3</a></li>
-	<ul>
-        <li><a href="#header-3_1"> Lecture 3-Verilog HDL - Design Abstractions</a></li>
-		<ul>
-	<li><a href="#header-3_2"> Lab Exercise- LE01 </a></li>
-		<ul></ul>
+	
    </div>
   
   <div class="toc">
   <ul>
-      <li><a href="#header-3">Session-4</a></li>			
+      <li><a href="#header-4">Session-4</a></li>			
         <ul>
 
 
@@ -67,8 +51,7 @@
 
 
 
-# <h1 id="header-1">Session-1</h1>	 
-## <h1 id="header-1_1">Lecture 1-Video-Intro to VLSI Design Flow</h1> 
+## <h1 id="header-1">Session-1</h1>	 
 
 **Design logic Implementation: Categories**:- 
 
@@ -191,8 +174,7 @@ The global routing will tell for which signal which metal layer is used.Before t
 ![image](https://github.com/user-attachments/assets/461b422a-e41b-48b7-aa45-b0a6825c71e8)
 
 
-# <h2 id="header-2">Session-2</h2>	 
-## <h2 id="header-2_1">Lecture 2-Verilog HDL- Lexical Conventions</h2> 
+## <h2 id="header-2">Session-2</h2>	 
 
 **Y- Chart**:- It is a model, which captures the considerations in designing semiconductor devices.
 
@@ -290,7 +272,9 @@ Module definitions may be written in terms of parameters where gardcoded numbers
 ![image](https://github.com/user-attachments/assets/461b4b35-9bbe-43f4-a568-13b3a68850ab)
 
 
-## <h2 id="header-2_1_1">Lab1- of Modelsim Simulation</h2> 
+## <h3 id="header-3">Session-3</h3>
+
+
 
 
 
