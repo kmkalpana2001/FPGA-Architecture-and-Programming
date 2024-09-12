@@ -302,20 +302,20 @@ Module definitions may be written in terms of parameters where gardcoded numbers
    wire sbar;
    assign sbar = ~s;
    assign out = (a&sbar) | (b&s);
-   endmodule```
+   endmodule
    
 
 **Using conditional operator**:-
 
- ```module mux2x1(a,b,s,out);
+   module mux2x1(a,b,s,out);
    input a,b,s,
    ouput out;
    assign out = s ? b: a;
-   endmodule```
+   endmodule
 
 **Using if else**:-
 
-```module mux2x1(a,b,s,out);
+   module mux2x1(a,b,s,out);
    input a,b,s;
    ouput reg out;
    always@(a,b,s)
