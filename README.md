@@ -339,12 +339,11 @@ Module definitions may be written in terms of parameters where gardcoded numbers
         default: out = 1'bx;
         endcase
         end
-     endmodule```
-
+     endmodule
+```
 
 
 ## <h4 id="header-4">Session-4</h4>
-
 
 
 
