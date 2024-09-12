@@ -345,5 +345,184 @@ Module definitions may be written in terms of parameters where gardcoded numbers
 
 ## <h4 id="header-4">Session-4</h4>
 
+**Design methodology**:-
+
+1) **Top-Down**:- Define final(top) module then identify the sub module to be be added and then describe sub module and establish connections.
+
+2) **Bottom-Up**:- Design the basic module(leaf cells) then assemble (instantiate ) sub moddules to the describe top module.
+
+![image](https://github.com/user-attachments/assets/2ae76090-3266-4bfa-9dbc-2a6e36edcfc8)
+
+**Module Instances**:- Module serves as template for creating actual new objects. Once invoked verilog creates a unique object from the template.
+
+**Module Instantiation**:- The process of creting unique objects from the module template. The create ddobjects are called moddule instances. Each object has its own name, variables, parameters and I/O interfaces.
+
+**Port connection Rules**:- 
+
+Input ports should be of net ata type(wire) and can be connected to net as well as register to the external world.
+
+Output ports may be register or a net internally but should be connected to net to the external world.
+
+Width matching is illegal to connect an internal and external items of different sizes while making inter-moddule port connections.
+
+![image](https://github.com/user-attachments/assets/07c59ea2-2c56-4941-9d96-75bda2d0cfb6)
+
+
+**Module instantiation**:- 
+
+**By port name: syntax**
+
+![image](https://github.com/user-attachments/assets/94cf75f8-51d9-4a94-8f05-f746743eb101)
+
+**Module name**:- name of the moddule to be instantiated (DUT)
+
+**Instance Name**:- Specific name for this particular instantiation of DUT 
+
+**a**"- Port of the module to be instantiated(sub module/DUT)
+
+**v_a**:- Name of the corresponing port of the top level block 
+
+Port connection list controls how this instantiation connects to the ports in the top level block. same module can be instantiated multiple time, but each with unique name.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**4-bit full adder : hierarchical view**:- 
+
+![image](https://github.com/user-attachments/assets/3405e48a-72e0-4e98-aa47-46bc4577356f)
+
+![image](https://github.com/user-attachments/assets/25144126-afe4-4d60-a6ff-23d72bfca609)
+
+```
+module ripple_carry_adder (
+    input  [3:0] A,      // 4-bit input A
+    input  [3:0] B,      // 4-bit input B
+    input        Cin,    // Carry-in for the least significant bit
+    output [3:0] Sum,    // 4-bit output Sum
+    output       Cout    // Carry-out from the most significant bit
+);
+
+    // Intermediate carry signals
+    wire C1, C2, C3;
+
+    // Full Adder for the least significant bit (LSB)
+    full_adder FA0 (
+        .A   (A[0]),
+        .B   (B[0]),
+        .Cin (Cin),
+        .Sum (Sum[0]),
+        .Cout(C1)
+    );
+
+    // Full Adder for the second bit
+    full_adder FA1 (
+        .A   (A[1]),
+        .B   (B[1]),
+        .Cin (C1),
+        .Sum (Sum[1]),
+        .Cout(C2)
+    );
+
+    // Full Adder for the third bit
+    full_adder FA2 (
+        .A   (A[2]),
+        .B   (B[2]),
+        .Cin (C2),
+        .Sum (Sum[2]),
+        .Cout(C3)
+    );
+
+    // Full Adder for the most significant bit (MSB)
+    full_adder FA3 (
+        .A   (A[3]),
+        .B   (B[3]),
+        .Cin (C3),
+        .Sum (Sum[3]),
+        .Cout(Cout)
+    );
+
+endmodule
+
+// Full Adder Module
+module full_adder (
+    input  A,        // Input A
+    input  B,        // Input B
+    input  Cin,      // Carry-in
+    output Sum,      // Sum output
+    output Cout      // Carry-out
+);
+
+    assign Sum  = A ^ B ^ Cin;      // Sum calculation
+    assign Cout = (A & B) | (Cin & (A ^ B));  // Carry-out calculation
+
+endmodule
+```
+
+**Components of a Simulation**:- Once design is completed it must be varified.
+
+![image](https://github.com/user-attachments/assets/2b4ce8e6-53cd-4fd6-b2b1-84de6d8f0ff7)
+
+**Test bench example**:- 2-input AND gate
+
+```
+   module and2(a,d,out);
+    input a,b,
+    output out;
+    wire a,b,out;
+    assign out =  a&b;
+    endmodule
+```
+
+
+![image](https://github.com/user-attachments/assets/8ae25062-302c-47de-8c9a-87a6df898ca3)
+
+```
+  module tb_and2;
+    reg A;        
+    reg B;         
+    wire OUT;       
+
+    and2 uut (.a(A),.b(B),.out(OUT));
+
+    initial begin
+        $monitor("Simtime=%g, A = %b, B = %b, OUT = %b", $time, A, B, OUT);
+    end
+    initial begin
+        #5 A=0;B=0;    #5 A=0;B=1;    #5 A=1;B=0;    #5 A=1;B=1;
+     end 
+endmodule
+```
+
+
+
 
 
