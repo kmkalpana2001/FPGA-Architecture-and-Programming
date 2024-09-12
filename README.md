@@ -25,28 +25,12 @@
         <ul>
       </div>
 		
-    
+<div class="toc">
+  <ul>
+    <li><a href="#header-5">Session-5</a></li>
+    <ul>
+    </div>
 		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -394,44 +378,19 @@ Port connection list controls how this instantiation connects to the ports in th
 
 ```
 module ripple_carry_adder (
-    input  [3:0] A,      // 4-bit input A
-    input  [3:0] B,      // 4-bit input B
-    input        Cin,    // Carry-in for the least significant bit
-    output [3:0] Sum,    // 4-bit output Sum
-    output       Cout    // Carry-out from the most significant bit
+    input  [3:0] A,     
+    input  [3:0] B,      
+    input        Cin,   
+    output [3:0] Sum,    
+    output       Cout    
 );
 
-    // Intermediate carry signals
     wire C1, C2, C3;
 
-    // Full Adder for the least significant bit (LSB)
-    full_adder FA0 (
-        .A   (A[0]),
-        .B   (B[0]),
-        .Cin (Cin),
-        .Sum (Sum[0]),
-        .Cout(C1)
-    );
+    full_adder FA0 (.A   (A[0]),.B   (B[0]),.Cin (Cin),.Sum (Sum[0]),.Cout(C1));
 
-    // Full Adder for the second bit
-    full_adder FA1 (
-        .A   (A[1]),
-        .B   (B[1]),
-        .Cin (C1),
-        .Sum (Sum[1]),
-        .Cout(C2)
-    );
-
-    // Full Adder for the third bit
-    full_adder FA2 (
-        .A   (A[2]),
-        .B   (B[2]),
-        .Cin (C2),
-        .Sum (Sum[2]),
-        .Cout(C3)
-    );
-
-    // Full Adder for the most significant bit (MSB)
+    full_adder FA1 (.A   (A[1]),.B   (B[1]),.Cin (C1),.Sum (Sum[1]),.Cout(C2));
+    full_adder FA2 (.A   (A[2]),.B   (B[2]),.Cin (C2),.Sum (Sum[2]),.Cout(C3));
     full_adder FA3 (
         .A   (A[3]),
         .B   (B[3]),
@@ -442,7 +401,6 @@ module ripple_carry_adder (
 
 endmodule
 
-// Full Adder Module
 module full_adder (
     input  A,        // Input A
     input  B,        // Input B
@@ -451,11 +409,11 @@ module full_adder (
     output Cout      // Carry-out
 );
 
-    assign Sum  = A ^ B ^ Cin;      // Sum calculation
-    assign Cout = (A & B) | (Cin & (A ^ B));  // Carry-out calculation
+    assign Sum  = A ^ B ^ Cin;     
+    assign Cout = (A & B) | (Cin & (A ^ B));  
 
 endmodule
-```
+   ```
 
 **Components of a Simulation**:- Once design is completed it must be varified.
 
