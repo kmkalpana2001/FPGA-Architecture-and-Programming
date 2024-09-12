@@ -296,7 +296,7 @@ Module definitions may be written in terms of parameters where gardcoded numbers
 
 **2:1 MUX data flow modeling**:-  
 
-``module mux2x1(a,b,s,out);
+```module mux2x1(a,b,s,out);
    input a,b,s,
    ouput out;
    wire sbar;
@@ -307,7 +307,7 @@ Module definitions may be written in terms of parameters where gardcoded numbers
 
 **Using conditional operator**:-
 
- ``module mux2x1(a,b,s,out);
+ ```module mux2x1(a,b,s,out);
    input a,b,s,
    ouput out;
    assign out = s ? b: a;
