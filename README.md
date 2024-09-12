@@ -274,12 +274,56 @@ Module definitions may be written in terms of parameters where gardcoded numbers
 
 ## <h3 id="header-3">Session-3</h3>
 
+**Behavioral Modelling -Aconceptual view**:- 
 
+1) Only the functionality of the circuit, no structure.
 
+2) Synthesis tool creates correcte logic.
 
+3) For the purpose of synthesis, as well as simulation.
 
+![image](https://github.com/user-attachments/assets/168ba4e5-1db8-47da-b1b2-a0e9d65d2a69)
 
+**Structural Modelling**:-  
 
+1) Functionallity ansd structure of the circuit.
+
+2) Call out the specific hardware.
+
+3) For the purpose of synthesis.
+
+![image](https://github.com/user-attachments/assets/d0b2422c-acbb-4195-87e2-92f7593bf7d3)
+
+**2:1 MUX data flow modeling**:-  
+
+``module mux2x1(a,b,s,out);
+   input a,b,s,
+   ouput out;
+   wire sbar;
+   assign sbar = ~s;
+   assign out = (a&sbar) | (b&s);
+   endmodule```
+   
+
+**Using conditional operator**:-
+
+ ``module mux2x1(a,b,s,out);
+   input a,b,s,
+   ouput out;
+   assign out = s ? b: a;
+   endmodule```
+
+**Using if else**:-
+
+```module mux2x1(a,b,s,out);
+   input a,b,s;
+   ouput reg out;
+   always@(a,b,s)
+     begin
+       if(s) out = b;
+       else  out = a;
+       end
+     endmodule```
 
 
 
