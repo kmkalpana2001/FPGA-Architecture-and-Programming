@@ -443,6 +443,38 @@ endmodule
 
 ## <h5 id="header-5">Session-5</h1>	 
 
+**Finite state machine(FSM)**:- Finte state machine can be viewed as an abstract representative of a ddigital logic with limited of finite states. It is a mathemetical model of computation. FSM is defined by a list of its states, its initial states, and the inputs that trigger reach transition. The machine states are represented by a collection of states variables. Particularly useful in modeling behavior of controllers.
+
+**Finite state machine types**:- 
+
+1) Moore FSM- Outputs depend solely on state vector.
+
+2) Mealy FSM- Ouputs depend on inputs and state vector.
+
+![image](https://github.com/user-attachments/assets/fd21d854-fa6b-49d0-87d7-19cb4a811291)
+
+**Components of FSM**:- Three basic components namely
+
+1) combinational logic(that efines next state assignment)
+
+2) Sequential logic(stores states)
+
+3) Output logic(Moore or mealy)
+
+4) Diffrent encoding styles(Binary,gray,johnson,onehot,custom)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
