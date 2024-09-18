@@ -465,7 +465,7 @@ endmodule
 
  
 
-## <h6 id="header-6">Session-6</h1>	 
+## <h6 id="header-6">Session-6</h6>	 
 
 **Introduction to FPGA**:- 
 
