@@ -450,7 +450,7 @@ endmodule
 endmodule
 ```
 
-## <h5 id="header-5">Session-5</h1>	 
+## <h5 id="header-5">Session-5</h5>	 
 
 **Finite state machine(FSM)**:- Finte state machine can be viewed as an abstract representative of a ddigital logic with limited of finite states. It is a mathemetical model of computation. FSM is defined by a list of its states, its initial states, and the inputs that trigger reach transition. The machine states are represented by a collection of states variables. Particularly useful in modeling behavior of controllers.
 
@@ -472,7 +472,6 @@ endmodule
 
 4) Different encoding styles(Binary,gray,johnson,onehot,custom)
 
- 
 
 ## <h6 id="header-6">Session-6</h6>	 
 
@@ -517,7 +516,7 @@ FPGAs- Supports implementation of relatively large logic circuits. and supports 
 ![image](https://github.com/user-attachments/assets/ce799831-2f11-487f-b40d-56d1ac18c619)
 
 
-## <h7 id="header-7">Session-7</h1>	
+## <h7 id="header-7">Session-7</h7>	
 
 **FPGA Architecture**:- 
 
