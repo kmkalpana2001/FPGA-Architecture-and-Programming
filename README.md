@@ -461,10 +461,56 @@ endmodule
 
 3) Output logic(Moore or mealy)
 
-4) Diffrent encoding styles(Binary,gray,johnson,onehot,custom)
+4) Different encoding styles(Binary,gray,johnson,onehot,custom)
+
+ 
+
+## <h6 id="header-6">Session-6</h1>	 
+
+**Introduction to FPGA**:- 
+
+In digital electronics systems there are mainly processing elements like ALU,processor cores, Memories , control logic, microprogram , FSM based control.
+
+Control logic perform many functions including device to device interfacing, data communication control, timing and control etc.
+
+![image](https://github.com/user-attachments/assets/c8b575ef-91eb-4e12-af22-4bc885c069cf)
+
+**Logic Devices**:- A logic device is one which can perform any logic function. logic device are broadly classified into fixed and programmable logic devices.
+
+Once manufactured logic in a fixed device cannot be changed. Programmable devices can be changed at any time to implement various logic functions.
+
+**Programmable logic devices(PLD)**:- With PLD designers use inexpensive software tools to quickly develop, simulate and test the designs. Designs can be programmed and tested in a live circuit. PLD used for testing can be used for production. Fast completion of final design/fast prototyping of system. 
+
+PLD is an integrated circuit with internal logic gates and interconnects. Gates can be connected to achieve the required logic function. The term programmable means changing the hardware configuration of internal logic and interconnects. Configuration of the internal logic is done by the user. PROM, PAL, PLA, GAL etc  are few examples of PLDs.
+
+**Types of PLDs**:- 
+
+PROM- Programmable OR array
+
+PAL-Programmmable AND array
+
+PLA- Programmable OR & AND array 
+
+CPLDs- Multiple combination of PLAs/PALs and complex logic functions can be implemented and supports in circuit programming
+
+FPGAs- Supports implementation of relatively large logic circuits. and supports ISP.
+
+![image](https://github.com/user-attachments/assets/d8c6a40a-bd59-4428-97f7-cba414e17ff3)
+
+**Field Programmable Gate Array(FPGA)**:-  FPGA contains programmable logic components and programmable interconnects. It can program FPGA to perform any digital logic. It also includes memory blocks, Io controllers, hard IPs to perform specific functions, embedded processors.
+
+**FPGA Design Flow**:- 
+
+1) **Full-Custom Design Flow**:- Full-custom design provides the highest level of design flexibility and optimization by allowing designers to customize every aspect of the IC. This approach is typically used for high-performance or specialized applications where standard cells or gate arrays do not meet the design requirements.
+
+2) **Semi-Custom Design Flow**:- Semi-custom design involves using pre-designed and pre-tested building blocks or components to create a custom IC. This approach is less time-consuming than full-custom design and is generally used for faster and more cost-effective designs.
+
+![image](https://github.com/user-attachments/assets/ce799831-2f11-487f-b40d-56d1ac18c619)
 
 
+## <h7 id="header-7">Session-7</h1>	
 
+**FPGA Architecture**:- 
 
 
 
