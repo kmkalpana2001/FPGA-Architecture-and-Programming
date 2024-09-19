@@ -625,6 +625,25 @@ FPGA are volatile.
 
 ## <h9 id="header-9">Session-9</h9>
 
+**Digital Logic Synthesis**:- Synthesis is translation,optimization and mapping in which transtion from verilog/VHDL RTL to gate level circuits and then optimization in terms of timing, area and power then we do mapping.
+
+![image](https://github.com/user-attachments/assets/52677dba-a652-4a97-ac7a-305e248f1adc)
+
+**RTL Coding for synthesis**:- 
+
+1) Infer registers
+
+2) Avoid latches
+
+3) Avoid combinational feedback
+
+4) Specify complete sensitivity lists
+
+5) In verilog, always use non-blocking assignments in always@(*edge clk)
+
+6) Use case over if-then-else whenever priority structure not required.
+
+7) Use separate
 
 
 
