@@ -37,19 +37,19 @@
     <ul>
     </div>
 
-   <div class="toc">
+<div class="toc">
   <ul>
     <li><a href="#header-7">Session-7</a></li>
     <ul>
     </div>
 
-   <div class="toc">
+ <div class="toc">
   <ul>
     <li><a href="#header-8">Session-8</a></li>
     <ul>
     </div>
 
-   <div class="toc">
+<div class="toc">
   <ul>
     <li><a href="#header-9">Session-9</a></li>
     <ul>
