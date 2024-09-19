@@ -43,7 +43,17 @@
     <ul>
     </div>
 
+    <div class="toc">
+  <ul>
+    <li><a href="#header-8">Session-8</a></li>
+    <ul>
+    </div>
 
+    <div class="toc">
+  <ul>
+    <li><a href="#header-9">Session-9</a></li>
+    <ul>
+    </div>
 
 ## <h1 id="header-1">Session-1</h1>	 
 
@@ -518,11 +528,102 @@ FPGAs- Supports implementation of relatively large logic circuits. and supports 
 
 ## <h7 id="header-7">Session-7</h7>	
 
-**FPGA Architecture**:- 
+**FPGA Architecture**:- An FPGA (Field-Programmable Gate Array) is a type of integrated circuit that is designed to be configured by a user after manufacturing, allowing for flexible and custom digital logic designs. The architecture of an FPGA consists of various building blocks that make it highly adaptable to a wide range of applications, including signal processing, telecommunications, and embedded systems.
+
+**Key Components of FPGA Architecture:**
+
+![image](https://github.com/user-attachments/assets/4d090595-42f9-4280-b1cb-15ea94babece)
+
+**1) Configurable Logic Blocks (CLBs) or Logic Array Blocks (LABs):**
+
+These are the fundamental building blocks of an FPGA, where the user-defined logic is implemented.Each CLB contains a combination of look-up tables (LUTs), flip-flops, and multiplexers.The LUTs perform combinational logic (truth table-based logic), while flip-flops handle sequential logic (storing data, clocked operations).Typically, a CLB/LAB can implement small logic functions, like AND, OR, and XOR.
+
+![image](https://github.com/user-attachments/assets/8ebba2b4-85c9-467c-a50e-8e56d31e1f35)
 
 
+**2) Interconnects (Routing):**
+
+The routing network connects the CLBs to one another and to input/output blocks.
+The routing is flexible and allows users to define how CLBs are interconnected.
+Switches and programmable interconnect points (PIPs) are used to dynamically route signals between different CLBs, memory blocks, and I/O blocks.
+
+![image](https://github.com/user-attachments/assets/3563c22c-b260-4c9b-a81c-c8154b1017ba)
+
+![Screenshot 2024-09-19 111437](https://github.com/user-attachments/assets/65210fa8-42b2-4afe-9e47-d6f8797d169a)
 
 
+**3) Input/Output Blocks (IOBs):**
+
+These are special blocks that manage communication between the FPGA and external devices.
+IOBs provide bidirectional communication, meaning they can act as both input and output channels.They support various signal standards (LVTTL, LVDS, etc.) and protocols depending on the application requirements.
+
+![image](https://github.com/user-attachments/assets/884b019c-2fb9-4058-a802-57c2b7c02750)
+
+**4) Block RAM (BRAM):**
+
+Block RAM is on-chip memory that allows for the storage of large amounts of data.
+It can be used for implementing buffers, caches, or other memory-intensive components.
+BRAM blocks are distributed throughout the FPGA and can be accessed quickly by the logic blocks.
+
+**5) Digital Signal Processing (DSP) Blocks:**
+
+These specialized blocks are optimized for high-performance mathematical operations, particularly those involving multiplication and addition.
+DSP blocks are commonly used in applications like image processing, audio processing, and communications.
+
+**6) Clock Management Blocks (CMTs):**
+
+Clock management is crucial in FPGA designs to ensure that various parts of the circuit work synchronously. FPGAs typically include phase-locked loops (PLLs) and delay-locked loops (DLLs) for clock generation, distribution, and frequency scaling.
+
+**7) Global and Local Clock Networks:**
+
+FPGAs contain global and local clock networks to efficiently distribute clock signals across the chip. These clock networks allow multiple clock domains to exist in a design, ensuring that the circuit can work reliably at different clock frequencies.
+
+**8) Hard Macros or IP Cores:**
+
+Many FPGAs contain predefined hardware modules like memory controllers, PCIe interfaces, Ethernet controllers, etc., which are known as IP cores. These hard macros are optimized for specific tasks and reduce the amount of custom logic that needs to be implemented.
+
+
+## <h8 id="header-8">Session-8</h8>
+
+**FPGA Configuration**:- An FPGA can be into two states
+
+1) Configuration mode
+
+2) User mode
+
+Configuration of an FPGA means downloading a stream of 0's and 1's into it through some special pins. Once the FPGA is configured it goes into user mode and become active, performing accordingly to your programmed logic function.
+
+Theere are three ways to configure FPGA:
+
+1) Use a cable from a PC to hte FPGA and run a software on the PC ro send data through the cable.
+
+2) Use a microcontroller on the board, with an adequate firmware to ssend data to the FPGA.
+
+3) Use a boot-PROM/Flash on the board, connected to the FPGA, that configures the FPGA automatically at power-up.
+
+**FPGA Programming**:- 
+The behavior of the FPGA(logic function) canbe defined by HDL or a schematic design.
+
+Compile the logic function on the PC using the software provided by the FPGA vendor that will create a binary file.
+
+Connect a cable from the PC to the FPGA and download the binary file.
+
+FPGA are volatile.
+
+![Screenshot 2024-09-19 112606](https://github.com/user-attachments/assets/e00e6744-1451-46bb-9f97-34281aecd64e)
+
+**FPGA Configurational Interfaces**:- 
+
+1) Master(Serial or parallel)-  FPGA retrives configurational from ROM at initial power-up.
+
+2) Slve(Serial or parallel)- FPGA configured by an external source like microprocessor or other FPGA.
+
+3) Boundary Scan- 4-wire IEEE standard serial interface used for testing then write and read access to configure memory then interfaces to FPGA core internal routing network. And that will dveloped to test interconnect between chips on PCB and used to scan every Flops in a chip. FPGA bit steam can be written into configuration memory via JTAG interface.
+
+![Screenshot 2024-09-19 113206](https://github.com/user-attachments/assets/4fd33b3a-7344-4bc0-97ec-aba6aa6d77a9)
+
+
+## <h9 id="header-9">Session-9</h9>
 
 
 
