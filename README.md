@@ -37,24 +37,36 @@
     <ul>
     </div>
 
-<div class="toc">
-  <ul>
+ <div class="toc">
+ <ul>
     <li><a href="#header-7">Session-7</a></li>
     <ul>
     </div>
 
  <div class="toc">
-  <ul>
+ <ul >
     <li><a href="#header-8">Session-8</a></li>
     <ul>
     </div>
 
-<div class="toc">
-  <ul>
+ <div class="toc">
+ <ul>
     <li><a href="#header-9">Session-9</a></li>
     <ul>
     </div>
 
+ <div class="toc">
+  <ul>
+    <li><a href="#header-10">Session-10</a></li>
+    <ul>
+    </div>
+
+
+
+
+
+
+     
 ## <h1 id="header-1">Session-1</h1>	 
 
 **Design logic Implementation: Categories**:- 
@@ -643,9 +655,21 @@ FPGA are volatile.
 
 6) Use case over if-then-else whenever priority structure not required.
 
-7) Use separate
+7) Use separate always for sequential state register and combinational logic
+
+8) Register all outputs
 
 
+**Synthesis Optimization**:- 
+
+**Time**- Top-most optimization criteria is time after that Power. 
+
+**Power**- Power optimization is not enabled by default. Optimizes power constraints for leakage power and dynamic power set by the attributes. max_leakage_power & max_dynami_power.
+
+**Area**- Smallest design that satisfies the timing constraints by default. Logic in the non-critical oaths is automatically downsized to save area.
+
+
+## <h10 id="header-10">Session-10</h10>
 
 
 
