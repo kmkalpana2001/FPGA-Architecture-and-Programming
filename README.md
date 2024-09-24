@@ -690,9 +690,45 @@ FPGA are volatile.
 
 ![image](https://github.com/user-attachments/assets/8493a19a-aefa-4a51-a5a9-757b69a53ada)
 
-
+![image](https://github.com/user-attachments/assets/4e285ea0-7984-4b70-8c3b-6feeddee29c7)
 
 ![image](https://github.com/user-attachments/assets/55e7fa2a-e2c0-4eb6-9012-26fc0b07d50a)
+
+
+**Timing in flip flops**:- 
+
+**1) Propagation delay(tpd)**:- With respect to posedge input will be sampled and after tpd the outpup will be changed.
+
+**2) Setup time(tst)**:- Before the posedge input should be stabilize that is called setup time.
+
+**3) Hold time(tht)**:- After the possedge the input should not change it should be steady for certain time that is called hold time.
+
+![image](https://github.com/user-attachments/assets/f6f06bba-124e-4f1b-a855-19a331cbaf3a)
+
+**Slack**:- It is the diffrence between actual/achieved time and the desired time.
+
+**How set these timing violations?**
+
+1) Fixing setup violations- Reduce the frequency of operation. Optimize the combo path. Use technique like pipe-lining, retiming etc.
+
+2) Fixing hold violations- We need to add the delay in the data path. We can ddo this by adding buffer or latches in between the flip flops.
+
+3) Fixing timing violation using clock skew- Changing clock network to improve timing. Positive skew improves setup time and Negative skew improves hold time.
+
+
+**Techniques to improve timing performance**:-
+
+**1) Retiming:-** Changing the flop locations to improve the timing.
+   
+![image](https://github.com/user-attachments/assets/227a9e27-bb42-472c-86f8-d17292a3215e)
+
+**2) Pipelining:-** Break the combo path by adding flops in between Adds latency at the o/p. Improves the through put.
+
+![image](https://github.com/user-attachments/assets/dc070b41-71fa-46f6-9588-e9abe5ee4d8b)
+
+**3) Clock domain transfer(CDC):**- Lower clock domain to higher clock domain
+
+![image](https://github.com/user-attachments/assets/a2bf6bb3-768a-413c-bbce-2e486ab10966)
 
 
 
