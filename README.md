@@ -707,7 +707,7 @@ FPGA are volatile.
 
 **Slack**:- It is the diffrence between actual/achieved time and the desired time.
 
-**How set these timing violations?**
+**How to set these timing violations?**
 
 1) Fixing setup violations- Reduce the frequency of operation. Optimize the combo path. Use technique like pipe-lining, retiming etc.
 
@@ -729,6 +729,43 @@ FPGA are volatile.
 **3) Clock domain transfer(CDC):**- Lower clock domain to higher clock domain
 
 ![image](https://github.com/user-attachments/assets/a2bf6bb3-768a-413c-bbce-2e486ab10966)
+
+
+## <h11 id="header-11">Session-11</h11>  
+
+**System On Chip(SOC):-**  An SOC is an integrated circuit that package basic components into a single chip. An SOC has most of the components to power a computer. SoCs combine various processing units, memory, input/output ports, and other specialized hardware into a compact, power-efficient form. They are commonly used in mobile devices, embedded systems, IoT devices, and other areas where space, power, and cost savings are crucial.
+
+**What is inside SoC**:- 
+
+![image](https://github.com/user-attachments/assets/0457ec9d-3d2e-43d0-a24d-a7fb8508c07c)
+
+![image](https://github.com/user-attachments/assets/ae996f60-1b10-4d7d-9de6-782d09ff0b12)
+
+**Advantages of SoC**:- 
+
+1) Low cost
+
+2) Higher performonace
+
+3) Higher reliability
+
+4) Lighter footprint
+
+5) Power efficiency
+
+**Limitations of SoC**:- 
+
+1) Less flexibility
+
+2) Application specific
+
+3) Complexity
+
+![image](https://github.com/user-attachments/assets/e4808a65-6625-4b97-bc04-322eac32309a)
+
+
+
+
 
 
 
