@@ -671,6 +671,32 @@ FPGA are volatile.
 
 ## <h10 id="header-10">Session-10</h10>
 
+**Hazards in combinational circuits**:- A hazard in a combo circuit may produce a glitch.A glitch is an unwanted spike. Glitches will generate unwanted high frequency components and spoil the circuit behaviour.
+
+
+**Static zero hazard**:- A static zero hazard occurs when a circuit's output is supposed to remain at logic 0, but due to a delay in signal propagation, a brief unwanted 1 occurs.
+
+**Static one hazard**:- A static one hazard occurs when a circuit's output is supposed to remain at logic 1, but due to signal delays, a brief unwanted 0 appears.
+
+**Dynamic hazard**:- A dynamic hazard happens when the output transitions from one state to another (e.g., from 0 to 1 or 1 to 0), but instead of making a smooth transition, the output oscillates briefly between the two states.
+
+![image](https://github.com/user-attachments/assets/b6975cdf-ed7d-4141-9b80-4ae28e2d62a1)
+
+![image](https://github.com/user-attachments/assets/279e0a81-6528-4559-bdcd-57b9b5c91958)
+
+**To remove the static hazard we need to add one extra redundant logic or gates to the given expression.** 
+
+![image](https://github.com/user-attachments/assets/1dd38218-0d8e-4fbf-a3f9-02a91e6e6a97)
+
+![image](https://github.com/user-attachments/assets/8493a19a-aefa-4a51-a5a9-757b69a53ada)
+
+
+
+![image](https://github.com/user-attachments/assets/55e7fa2a-e2c0-4eb6-9012-26fc0b07d50a)
+
+
+
+
 
 
 
