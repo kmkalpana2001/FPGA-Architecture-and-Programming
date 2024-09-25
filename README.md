@@ -73,7 +73,11 @@
 	<ul>
    </div>
 
-
+<div class="toc">
+  <ul>
+      <li><a href="#header-13">Session-13</a></li>
+	<ul>
+   </div>
      
 ## <h1 id="header-1">Session-1</h1>	 
 
@@ -790,13 +794,76 @@ Custom logic circuitry Processors, Memory units, Various types of input/output(I
 
   Such as field programmable gate array(FPGA).
 
+**Why FPGA for SoC Design:**- 
+
+<li>Offer large logic capacity, exceeding several million equivalent logic gates.</li>
+
+<li>Dedicated memory resources.</li>
+
+<li>Include special hardware circuitry that is often neede in digital systems.</li>
+
+1) DSP blocks(with multiply and accumulate functionality)
+
+2) Phase-locked loops(PLLs) or delay-locked loops(DLLs) that support complex clocking schemes.
+
+<li>Support a wide range of interface standards- DDR SRAM memory, PCI and high serial protocols.</li>
+
+<li>Embedded logic analyzers</li>
+
+**FPGA based SoC design- Processors:**- 
+
+Two types of processors are available to use in FPGA 
+
+ <li>Hard Processors</li>
+
+ <li>Soft processors</li>
+
+**Hard processors:**- A pre designed circuit that is fabrictaed within the FPGA chip.
+
+**Soft processors:**- The processor exists as code written in a hardware descriptoon language(HDL).
+
+![image](https://github.com/user-attachments/assets/0f8441d8-006c-4367-86b3-f87bc8185b81)
+
+**Example:**- 
+
+<li>System consist of soft processor core</li>
+
+<li>Peripherals are added to processor local bus / On chip peripheral bus </li>
+
+<li>External memory interfaces.</li>
+
+<li>The whole system can be used to develop SOC based applications.</li>
+
+![image](https://github.com/user-attachments/assets/49fd560b-a3ff-4230-afb7-4eaefe7faf12)
+
+![image](https://github.com/user-attachments/assets/957b16ff-35cc-4d92-9c94-e44f21f28f8e)
+
+**Software tools for SoC:**-
+
+<li>Two main aspects of the software tools</li>
+
+1) The creation of the system hardware.
+
+2) The development of the software that runs on the processors included in the system.
+
+<li>For creating the hardware circuitry the tools allow the user to build a system by making use of pre-designed building blocks for processors, memory controllers, digital signal; processing circuits and various communiction mmodules(such as UARTs).</li>
+
+<li>The software allows easy instantiation of these sub-circuits and can automatically interconnect them on the FPGA chip.</li>
+
+<li>The Electronic desing automation tools generate memory maps for the system, allowing the processors to access systems hardware resources.</li>
+
+**Conclusions**:- 
+
+<li>FPGA is a reconfigurable hardware.</li>
+
+<li>Complex digital system can be realized in an FPGA.</li>
+
+<li>FPGAs can be used for fast product development/prototyping of electronics system.</li>
+
+<li>FPGA based SoC ddesign proveds more flexibility to develop embedded applications.</li>
 
 
-
-
-
-
-
+## <h13 id="header-13">Session-13</h13>  
 
 
 
