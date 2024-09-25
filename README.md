@@ -67,7 +67,11 @@
 	<ul>
    </div>
 
-
+<div class="toc">
+  <ul>
+      <li><a href="#header-12">Session-12</a></li>
+	<ul>
+   </div>
 
 
      
@@ -766,6 +770,31 @@ FPGA are volatile.
 3) Complexity
 
 ![image](https://github.com/user-attachments/assets/e4808a65-6625-4b97-bc04-322eac32309a)
+
+
+## <h12 id="header-12">Session-12</h12>  
+
+**FPGA based SoC design:**- A typical digital system design involves 
+
+Custom logic circuitry Processors, Memory units, Various types of input/output(I/O)interfaces
+
+<li> Traditional approach to designsuch system is</li>
+
+  1) A new integrated circuit(IC) chip may be created for the custom logic circuits.
+
+  2) Each pre-designed component is included as a seperate chip.
+
+<li> Different approach for realizing digital system called embedded system design.</li>
+
+<li> It leverages the advance capabilities of todays IC technology by implementing many of the components of the system within a simple chip.</li>
+
+  Such as field programmable gate array(FPGA).
+
+
+
+
+
+
 
 
 
