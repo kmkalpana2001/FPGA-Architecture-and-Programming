@@ -852,6 +852,7 @@ Two types of processors are available to use in FPGA
 
 <li>The Electronic desing automation tools generate memory maps for the system, allowing the processors to access systems hardware resources.</li>
 
+
 **Conclusions**:- 
 
 <li>FPGA is a reconfigurable hardware.</li>
