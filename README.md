@@ -73,12 +73,7 @@
 	<ul>
    </div>
 
-<div class="toc">
-  <ul>
-      <li><a href="#header-13">Session-13</a></li>
-	<ul>
-   </div>
-     
+
 ## <h1 id="header-1">Session-1</h1>	 
 
 **Design logic Implementation: Categories**:- 
@@ -862,9 +857,6 @@ Two types of processors are available to use in FPGA
 <li>FPGAs can be used for fast product development/prototyping of electronics system.</li>
 
 <li>FPGA based SoC ddesign proveds more flexibility to develop embedded applications.</li>
-
-
-## <h13 id="header-13">Session-13</h13>  
 
 
 
