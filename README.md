@@ -859,7 +859,112 @@ Two types of processors are available to use in FPGA
 <li>FPGA based SoC ddesign proveds more flexibility to develop embedded applications.</li>
 
 
+**Counter Example in Vivado**:-
 
+A counter is a device that stores (and sometimes displays) the number of times a specific event or process has occurred in digital logic and computing, frequently about a clock. The most typical kind is a sequential digital logic circuit, which has several output lines and a clock-input line. The binary or BCD number system is represented by the values on the output lines as a number. The value in the counter is increased or decreased with each pulse applied to the clock input.
+
+<ul>A 4-bit up counter is being used for exploring the Vivado tool and OpenFPGA.</ul>
+
+
+**Velilog code**:-
+
+```
+module counter(clk,reset,count);
+input clk,reset;
+output reg [3:0] count = 4'b0000;
+reg [25:0] count_reg;
+reg clk_div = 1'b0;
+
+always @ (posedge clk)
+begin
+if (reset)
+    begin
+        clk_div <= 1'b0;
+        count_reg <= 26'd0;
+     end
+else
+    begin
+        count_reg <= count_reg + 1;
+        if (count_reg == 26'h33) // for synthesis
+    //   if (count_reg == 26'd12) // for simulation
+        begin
+            clk_div <= ~ clk_div;
+            count_reg <= 26'd0;
+        end
+    end
+ end
+ always @ (posedge clk_div)
+ begin
+ if (reset)
+ begin
+    count <= 4'b0000;
+ end
+ else
+ begin
+    count <= count + 1;
+ end
+ end
+endmodule
+```
+
+**Verilog testbench for counter**:-
+
+```
+`timescale 1ns / 1ps
+
+module test_counter();
+reg clk, reset;
+wire [3:0] out; //create an instance of the design
+
+counter dut(clk, reset, out);  
+   initial begin
+   //note that these statements are sequential.. execute one after the other 
+   //$dumpfile ("count.vcd"); 
+   //$dumpvars(0,upcounter_testbench);
+	clk=0;  //at time=0
+	reset=1;//at time=0
+	#20; //delay 20 units
+	reset=0; //after 20 units of time, reset becomes 0
+   end
+   always 
+	#5 clk=~clk;  // toggle or negate the clk input every 5 units of time
+endmodule
+
+```
+
+**Behavioral simulation of the counter**:-
+
+![image](https://github.com/user-attachments/assets/f71bc27d-34c5-4ea6-aadb-61dde5dfb0d6)
+
+
+**Schematic of the counter**:-
+
+![image](https://github.com/user-attachments/assets/862589f6-c792-470a-a03a-f6a7f0048437)
+
+
+**I/O Planning of the counter**:-
+
+![image](https://github.com/user-attachments/assets/3019bfd0-f8b1-443f-a210-cfab119043d3)
+
+![image](https://github.com/user-attachments/assets/5036c4b5-1f0c-4e73-ad74-2fa0505857ab)
+
+**Circuit of the counter**:-
+
+![image](https://github.com/user-attachments/assets/438d35ad-c9d6-427f-a9e3-38eada5155d3)
+
+
+**Power report of the counter**:-
+
+![image](https://github.com/user-attachments/assets/9a9f0024-b25b-4e3e-8ed0-52572fcd51da)
+
+**Report utilization of the counter**:-
+
+![image](https://github.com/user-attachments/assets/0d4c79ba-b13e-4140-aa0c-51b354ce8c90)
+
+
+**POST-IMPLEMENTATION TIMING SIMULATION**:-
+
+![image](https://github.com/user-attachments/assets/702aba40-599a-4d88-8605-f7ded40b08ec)
 
 
 
