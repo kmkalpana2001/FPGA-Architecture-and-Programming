@@ -37,41 +37,41 @@
     <ul>
     </div>
 
-<div class="toc">
+  <div class="toc">
   <ul>
     <li><a href="#header-7">Session-7</a></li>
     <ul>
     </div>
 
-<div class="toc">
+  <div class="toc">
   <ul >
     <li><a href="#header-8">Session-8</a></li>
     <ul>
     </div>
 
-<div class="toc">
+  <div class="toc">
   <ul>
     <li><a href="#header-9">Session-9</a></li>
     <ul>
     </div>
 
-<div class="toc">
+  <div class="toc">
   <ul>
     <li><a href="#header-10">Session-10</a></li>
     <ul>
     </div>
 
-<div class="toc">
+  <div class="toc">
   <ul>
-      <li><a href="#header-11">Session-11</a></li>
-	<ul>
-   </div>
+    <li><a href="#header-11">Session-11</a></li>
+    <ul>
+    </div>
 
-<div class="toc">
+  <div class="toc">
   <ul>
-      <li><a href="#header-12">Session-12</a></li>
-	<ul>
-   </div>
+    <li><a href="#header-12">Session-12</a></li>
+    <ul>
+    </div>
 
 
 ## <h1 id="header-1">Session-1</h1>	 
@@ -848,6 +848,7 @@ Two types of processors are available to use in FPGA
 <li>The Electronic desing automation tools generate memory maps for the system, allowing the processors to access systems hardware resources.</li>
 
 
+
 **Conclusions**:- 
 
 <li>FPGA is a reconfigurable hardware.</li>
@@ -857,6 +858,7 @@ Two types of processors are available to use in FPGA
 <li>FPGAs can be used for fast product development/prototyping of electronics system.</li>
 
 <li>FPGA based SoC ddesign proveds more flexibility to develop embedded applications.</li>
+
 
 
 **Counter Example in Vivado**:-
